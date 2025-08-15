@@ -51,9 +51,9 @@ const workshopData = [
 
 const UpcomingWorkshops = () => {
   return (
-    <div id="Workshops" className="max-w-5xl mx-auto px-4 py-10">
-      <h1 className="text-3xl font-bold mb-2">Upcoming Workshops</h1>
-      <p className="text-gray-500 mb-8">Attend from the comfort of your home</p>
+    <div id="Workshops" className="max-w-5xl mx-auto px-4 py-10 ">
+      <h1 className="text-3xl font-bold mb-2 text-center">Upcoming Sessions</h1>
+      <p className="text-gray-500 mb-8 text-center">Attend from the comfort of your home</p>
       {workshopData.map((workshop, index) => (
         <WorkshopCard key={index} {...workshop} />
       ))}

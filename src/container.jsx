@@ -17,7 +17,7 @@ const Container = () => {
 
   return (
     <section id='About Us' className="bg-[#d0e1ee] py-12 px-8 md:px-20 flex flex-col md:flex-row items-center justify-between min-h-[90vh] ">
-      <div className="max-w-lg space-y-6 text-center md:text-left">
+      <div className="max-w-lg space-y-6 text-center md:text-left md:ml-10">
         {/* Logo and Title */}
         <div className="flex items-center space-x-3 justify-center md:justify-start">
           <div className="w-8 h-8 rounded-full border-2 border-[#015b98]"></div>
@@ -56,7 +56,7 @@ const Container = () => {
       </div>
 
       {/* Right Section (Video) */}
-      <div className="mt-10 md:mt-0 relative">
+      <div className="mt-10 md:mt-0 md:mr-5 relative">
         <video
           ref={videoRef}
           src="https://www.w3schools.com/html/mov_bbb.mp4" // Replace with your actual video URL

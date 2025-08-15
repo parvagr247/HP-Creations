@@ -1,11 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { FaYoutube, FaInstagram, FaFacebook  } from "react-icons/fa";
+import { FaYoutube, FaInstagram, FaFacebook } from "react-icons/fa";
 import { BiSolidSend } from "react-icons/bi";
+import { IoIosGlobe } from "react-icons/io";
 
 const App = () => {
   return (
-    <div id="Info"className="w-full  overflow-hidden font-sans">
+    <div id="Info" className="w-full  overflow-hidden font-sans">
       {/* ===== Hero Section above the Wave Animation (Floating)  === */}
       <div className="relative h-25 md:h-[300px] flex items-center justify-center text-white">
         {/* Wave Animation */}
@@ -22,13 +23,13 @@ const App = () => {
               d: [
                 "M0,160 C360,280 1080,40 1440,160 L1440,320 L0,320 Z",
                 "M0,200 C360,120 1080,280 1440,200 L1440,320 L0,320 Z",
-                "M0,160 C360,280 1080,40 1440,160 L1440,320 L0,320 Z"
-              ]
+                "M0,160 C360,280 1080,40 1440,160 L1440,320 L0,320 Z",
+              ],
             }}
             transition={{
               duration: 6,
               repeat: Infinity,
-              ease: "easeInOut"
+              ease: "easeInOut",
             }}
           />
         </svg>
@@ -43,12 +44,23 @@ const App = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-2xl font-semibold mb-4">satvic movement</h2>
+            <h2 className="text-2xl font-semibold mb-4">
+              CAPACITY BUILDING <br />
+              PROGRAMME
+            </h2>
             <hr className="border-white/40 w-[80px] mb-4" />
             <div className="flex gap-4 mt-2">
-              <FaYoutube className="text-xl hover:text-red-400" />
-              <FaInstagram className="text-xl hover:text-pink-400" />
-              <FaFacebook className="text-xl hover:text-blue-400" />
+              <a
+                href="https://www.instagram.com/cbpmnit "
+                target="_blank">
+                <FaInstagram className="text-xl hover:text-pink-400 " />
+              </a>
+              <a href="https://www.youtube.com/@MNITJaipurIndia">
+               <FaYoutube className="text-xl hover:text-red-400" />
+              </a>
+             
+              <a href="https://www.mnit.ac.in/">
+              <IoIosGlobe  className="text-xl hover:text-green-400 " /></a>
             </div>
           </motion.div>
 
@@ -61,7 +73,7 @@ const App = () => {
           >
             <div>
               <p className="font-bold mb-2">Explore</p>
-              <ul className="space-y-1">
+              <ul className="space-y-1 ">
                 <li>About Us</li>
                 <li>Workshops</li>
                 <li>Books</li>
@@ -89,14 +101,14 @@ const App = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
-            <p className="font-bold mb-4 text-sm">Join our Newsletter</p>
+            <p className="font-bold mb-4 text-sm ">Join our Newsletter</p>
             <input
               type="text"
               placeholder="Enter Your Name"
-              className="mb-2 p-2 w-full rounded text-black"
+              className="mb-2 p-2 w-full rounded text-black border-2 border-amber-50"
             />
-            <div className="mb-2 relative">
-              <span className="absolute left-2 top-2">🇮🇳</span>
+            <div className="mb-2 rounded relative border-2 border-amber-50">
+              <span className="absolute left-2 top-2 ">🇮🇳</span>
               <input
                 type="text"
                 placeholder="India"
@@ -105,11 +117,11 @@ const App = () => {
             </div>
             <input
               type="email"
-              placeholder="Enter your e-mail"
-              className="mb-2 p-2 w-full rounded text-black"
+              placeholder="Enter your e-mail "
+              className="mb-2 p-2 w-full rounded text-black border-2 border-amber-50"
             />
-            <button className="flex items-center justify-center gap-2 bg-white text-[#5E847E] py-2 px-4 rounded hover:bg-gray-100">
-              Subscribe <BiSolidSend />
+            <button className="flex items-center justify-center gap-2 bg-white text-[#015b98] py-2 px-4 rounded hover:bg-gray-100">
+              Send <BiSolidSend />
             </button>
           </motion.div>
         </div>
@@ -124,7 +136,7 @@ const App = () => {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.6 }}
         >
-          <p className="mb-2 ">© 2025 Satvic Movement. All Rights Reserved.</p>
+          <p className="mb-2 ">© 2025 Capacity Builiding Program. All Rights Reserved.</p>
           <div className="flex gap-4 mt-2 mb-2  md:mt-0">
             <span>Terms & conditions</span>
             <span>Privacy Policy</span>

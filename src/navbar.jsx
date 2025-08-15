@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { LiaGripHorizontalSolid } from "react-icons/lia";
-import logo from "./images/CbpLogo.jpg";
+import logo from "./images/Cbp_logo_bgremoved.png";
 import { IoMdClose } from "react-icons/io";
 
 const Navbar = () => {
@@ -64,7 +64,7 @@ const Navbar = () => {
       }`}
     >
       {/* Logo */}
-      <img src={logo} alt="Logo" className="h-20 w-20" />
+      <img src={logo} alt="Logo" className="h-20 w-20 ml-20" />
 
       {/* Desktop Menu */}
       <div className="hidden md:flex items-center space-x-8">
@@ -76,7 +76,7 @@ const Navbar = () => {
               onMouseEnter={() => item.dropdown && toggleDropdown(item.name)}
               onMouseLeave={() => item.dropdown && setOpenDropdown(null)}
             >
-              <button className="hover:text-gray-300 cursor-pointer transition duration-200"
+              <button className="hover:text-gray-300 cursor-pointer transition duration-200 text-lg"
                 onClick={() => handleMenuItemClick(item.name)}>
                 {item.name}
               </button>
@@ -85,8 +85,8 @@ const Navbar = () => {
         </ul>
       </div>
 
-      {/* Desktop Contact Us */}
-      <button className="hidden md:flex bg-white text-[#015b98] font-semibold px-4 py-2 rounded-full hover:bg-gray-200 cursor-pointer transition duration-200">
+      {/* Desktop Buy Tickets */}
+      <button className="hidden md:flex mr-20 bg-white text-[#015b98] font-semibold px-4 py-2 rounded-full hover:bg-gray-200 cursor-pointer transition duration-200">
         Buy Tickets
       </button>
 
